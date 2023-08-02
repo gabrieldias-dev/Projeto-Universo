@@ -1,7 +1,87 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&family=Lugrasimo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&family=Lugrasimo&family=Stick+No+Bills:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+@keyframes fundo {
+
+    /* De cima e esquerda */
+    from {
+        background-position: left;
+       background-size: 1500px; 
+
+    }
+
+    /* para baixo e direita */
+    to {
+        background-position: right;
+        background-size: 1450px; 
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body { 
+    background-image: url(../imagens/b3.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    animation: fundo 45s linear infinite;
+    animation-direction: alternate; 
+}
+
+.filtro {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.271);    
+
+}
+
+.primeira-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.896)
+
+}
+
+.primeira-section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11em;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 200;
+    
+}
+
+.primeira-section p {
+    width: fit-content;
+    font-size: 1.5em;
+    padding: 2px 4px 2px 4px;
+    background-color: rgba(0, 0, 0, 0.611);
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.segunda-section {
+    background-color: rgba(0, 0, 255, 0.121);
+    width: 100%;
+    height: 100vh;
+}
+
