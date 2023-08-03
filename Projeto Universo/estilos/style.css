@@ -2,12 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&family=Lugrasimo&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&family=Lugrasimo&family=Stick+No+Bills:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&family=Lugrasimo&family=Stick+No+Bills:wght@200;300&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @keyframes fundo {
@@ -26,6 +28,17 @@
     }
 }
 
+ @keyframes rotation {
+    from {
+        transform: rotate(0deg),;
+        
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} 
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -37,7 +50,7 @@ body {
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
-    animation: fundo 45s linear infinite;
+    animation: fundo 40s linear infinite;
     animation-direction: alternate; 
 }
 
@@ -47,15 +60,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.271);    
+    background-color: rgba(0, 0, 0, 0.029);    
 
+}
+
+section {
+    width: 100%;
 }
 
 .primeira-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     color: rgba(255, 255, 255, 0.896)
 
 }
@@ -70,18 +86,72 @@ body {
 }
 
 .primeira-section p {
+    font-family: Arial, Helvetica, sans-serif;
     width: fit-content;
     font-size: 1.5em;
     padding: 2px 4px 2px 4px;
-    background-color: rgba(0, 0, 0, 0.611);
+    background-color: rgba(0, 0, 0, 0.493);
     text-align: center;
     text-transform: uppercase;
     
 }
 
+h2 {
+    font-family: 'Stick No Bills', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 1.2em;
+
+}
+
 .segunda-section {
-    background-color: rgba(0, 0, 255, 0.121);
+    margin-top: 10em;
+    display: flex;
+   justify-content: center;
     width: 100%;
     height: 100vh;
 }
+
+article {
+    text-align: center;
+    background-color: #ffffff0b;
+    backdrop-filter: blur(4px);
+    border-top: 2px solid #ffffff50;
+    border-left: 2px solid #ffffff55;
+    width: 700px;
+    height:2000px;
+    border-radius: 5px;
+    padding: 1.5em;
+}
+
+p {
+    margin-top: 1em;
+    padding: 0 2em 0 2em;
+    text-align: left;
+}
+
+.galaxia-rotation {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    z-index: -1;
+    transform: translateY(-600px);
+}
+
+img.galaxias {
+    width: 500px; 
+    opacity: 30%; 
+    animation: rotation 50s linear infinite;  
+    
+}
+
+img#galaxia2 {
+    width: 500px; 
+    opacity: 30%;
+    animation: rotation 50s linear infinite;  
+
+}
+
+
+
 
