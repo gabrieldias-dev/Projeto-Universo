@@ -9,7 +9,8 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Stick No Bills', sans-serif;
+    
 }
 
 @keyframes fundo {
@@ -87,6 +88,7 @@ section {
 
 .primeira-section p {
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2px;
     width: fit-content;
     font-size: 1.5em;
     padding: 2px 4px 2px 4px;
@@ -99,13 +101,13 @@ section {
 h2 {
     font-family: 'Stick No Bills', sans-serif;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 1.2em;
 
 }
 
 .segunda-section {
-    margin-top: 10em;
+    margin-top: 2em;
     display: flex;
    justify-content: center;
     width: 100%;
@@ -125,9 +127,13 @@ article {
 }
 
 p {
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 1em;
     padding: 0 2em 0 2em;
     text-align: left;
+    font-size: 1.2em;
+    letter-spacing: 1px;    
+    
 }
 
 .galaxia-rotation {
@@ -147,8 +153,27 @@ img.galaxias {
 
 img#galaxia2 {
     width: 500px; 
-    opacity: 30%;
+    opacity: 35%;
     animation: rotation 50s linear infinite;  
+}
+
+.bloco1 {
+    border-left: 2px solid rgb(75, 75, 75);
+    border-top: 2px solid rgb(75, 75, 75);
+}
+
+.bloco2 {
+    border-top: 2px solid rgb(75, 75, 75);
+    border-right: 2px solid rgb(75, 75, 75);
+    
+}
+
+h2 {
+    margin-top: 0.5em;
+}
+
+.ultimo-paragrafo {
+    padding-bottom: 1em;
 
 }
 
