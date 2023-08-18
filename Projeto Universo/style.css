@@ -18,14 +18,14 @@
     /* Da esquerda */
     from {
         background-position: left;
-        background-size: 1800px; 
+        background-size: 2500px; 
 
     }
 
     /* para direita */
     to {
         background-position: right;
-        background-size: 1600px; 
+        background-size: 2500px; 
     }
 }
 
