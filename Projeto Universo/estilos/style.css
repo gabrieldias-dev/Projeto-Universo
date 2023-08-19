@@ -204,8 +204,9 @@ img.galaxias {
 .fotos_galaxias {
     margin-top: 2em;
     margin-bottom: 2em;
-    width: 100vw;
+    width: 1450px;
     height: 500px;
+    border: 2px solid rgba(9, 33, 98, 0.568);
 }
 
 .galeria {
@@ -214,7 +215,7 @@ img.galaxias {
     height: 100%;
 }
 
-.galeria > img {
+.galeria >   img {
     aspect-ratio: 9/16;
     min-width: 0;
     flex: 1 1 10px;
