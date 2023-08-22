@@ -51,8 +51,8 @@ body {
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
-    /* animation: fundo 100s linear infinite;
-    animation-direction: alternate;  */
+     animation: fundo 100s linear infinite;
+    animation-direction: alternate;  
     
 }
 
@@ -158,8 +158,8 @@ p {
 
 img.galaxias {
     width: 600px; 
-    opacity: 95%; 
-    /* animation: rotation 50s linear infinite;   */
+    opacity: 100%; 
+     animation: rotation 50s linear infinite;   
     overflow: hidden;
     
 }
