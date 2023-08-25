@@ -51,8 +51,8 @@ body {
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
-     animation: fundo 100s linear infinite;
-    animation-direction: alternate;  
+    /* animation: fundo 100s linear infinite;
+    animation-direction: alternate;  */
     
 }
 
@@ -158,8 +158,8 @@ p {
 
 img.galaxias {
     width: 600px; 
-    opacity: 100%; 
-     animation: rotation 50s linear infinite;   
+    opacity: 95%; 
+    /* animation: rotation 50s linear infinite;   */
     overflow: hidden;
     
 }
@@ -199,14 +199,15 @@ img.galaxias {
     padding: 1em 0 1em 0;
 }
 
-/* Imagens galaxias */
+/* --------------------- Imagens galaxias ----------------------------*/
 
 .fotos_galaxias {
     margin-top: 2em;
     margin-bottom: 2em;
-    width: 1450px;
+    width: 1500px;
     height: 500px;
-    border: 2px solid rgba(9, 33, 98, 0.568);
+    border: 2px solid rgba(24, 6, 64, 0.351);
+    border-radius: 8px;
 }
 
 .galeria {
@@ -215,7 +216,7 @@ img.galaxias {
     height: 100%;
 }
 
-.galeria >   img {
+.galeria >  img {
     aspect-ratio: 9/16;
     min-width: 0;
     flex: 1 1 10px;
@@ -225,7 +226,8 @@ img.galaxias {
 }
 
 img:hover {
-    flex: 1 1 500px;
+     flex: 1 1 300px;  /* ao passar mouse em cima, imagem cresce para 300px de largura*/
     opacity: 1;
 }
+
 
