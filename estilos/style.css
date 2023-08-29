@@ -13,22 +13,23 @@
     
 }
 
+/* Animação do background do body */
 @keyframes fundo {
 
-    /* De: esquerda e tamanho 1800px*/
     from {
         background-position: left;
         background-size: 2000px; 
 
     }
 
-    /* para:  direita  e diminiui tamanho para 1600px*/
     to {
         background-position: right;
         background-size: 2000px; 
     }
 }
 
+
+/* Animação da galaxia e sistema solar girando */
  @keyframes rotation {
     from {
         transform: rotate(0deg),;
@@ -51,7 +52,7 @@ body {
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
-    animation: fundo 100s linear infinite;
+    animation: fundo 120s linear infinite;
     animation-direction: alternate;  
     
 }
@@ -111,11 +112,12 @@ h2 {
     font-family: 'Stick No Bills', sans-serif;
     text-transform: uppercase;
     font-size: 2.2em;
-    margin-bottom: 1.2em;
+    margin-bottom: 0.5em;
     margin-top: 0.5em;
     letter-spacing: 2px;
 
 }
+
 
 
 
@@ -134,7 +136,7 @@ article {
     background-color: #ffffff0b;
     backdrop-filter: blur(4px);
     border-top: 2px solid #ffffff50;
-    border-left: 2px solid #ffffff55;
+    border-right: 2px solid #ffffff55;
     width: 700px;
     height: 600px;
     border-radius: 5px;
@@ -163,8 +165,6 @@ article {
     opacity: 100%; 
     animation: rotation 50s linear infinite;   
     overflow: hidden;
-   
-    
 }
 
 
@@ -178,11 +178,8 @@ article {
     border-top: 2px solid rgb(100, 100, 100);
 }
 
-.ultimo-paragrafo {
-    padding-bottom: 1em;
 
-}
-
+/* --------------------- Galeria das galaxias ----------------------------*/
 
 .terceira-section {
     display: flex;
@@ -202,7 +199,6 @@ article {
     padding: 1em 0 1em 0;
 }
 
-/* --------------------- Galeria galaxias ----------------------------*/
 
 .terceira-section  h3 {
     font-size: 2em;
@@ -212,7 +208,7 @@ article {
     margin-top: 2em;
     margin-bottom: 2em;
     width: 1500px;
-    height: 500px;
+    height: 550px;
     border: 2px solid rgba(24, 6, 64, 0.351);
     border-radius: 8px;
 }
@@ -241,7 +237,7 @@ article {
 .info-galaxia {
     position: absolute;
     width: 100%;
-    height: 30%;
+    height: 25%;
     bottom: -150px; 
     background-color: rgba(0, 0, 0, 0.471);
     transition: bottom .7s;
@@ -261,7 +257,75 @@ article {
 .container-img p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    padding: 10px 8px 0 8px;
+    padding: 10px 8px 0px 8px;
 }
 
+/* -------------------- Sistema solar ------------------------------- */
+
+.quarta-section {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.quarta-section article {
+    border-right: none;
+    border-left: 2px solid #ffffff70;
+    background-color: #0000004c;
+    backdrop-filter: blur(4px);
+
+}
+.quarta-section p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em 2em 0 2em;
+    text-align: left;
+    font-size: 1.2em;
+    letter-spacing: 1px;  
+}
+
+.sistema-solares {
+    max-width: 700px;
+}
+.quarta-section img {
+    width: 100%;
+    animation: rotation 70s linear infinite;
+
+}
+
+.quarta-section .bloco-1{
+    border-top: 2px solid rgb(101, 101, 101);
+    border-right: 2px solid rgb(173, 173, 173);
+}
+
+.quarta-section .bloco-2{
+    border-top: 2px solid rgb(101, 101, 101);
+    border-left: 2px solid rgb(173, 173, 173);
+    border-bottom: 2px solid rgb(101, 101, 101);
+}
+
+.quarta-section .bloco-3{
+    border-right: 2px solid rgb(173, 173, 173);
+}
+
+.quarta-section .bloco-3 h2 {
+    margin-top: 0;
+}
+
+/* Planetas do sistema solar */
+
+.quinta-section h2 {
+    margin: 0;
+    width: 100%;
+    text-shadow: 5px 5px 8px black;
+    font-size: 2.8em;
+    color: white;
+    text-align: center;
+    background-color: rgba(23, 23, 23, 0.662);
+    backdrop-filter: blur(4px);
+    padding: 1em 0 1em 0;
+
+}
 
