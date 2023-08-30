@@ -167,18 +167,6 @@ article {
     overflow: hidden;
 }
 
-
-.bloco1 {
-    border-left: 2px solid rgb(173, 173, 173);
-    border-top: 2px solid rgb(101, 101, 101);
-}
-
-.bloco2 {
-    border-right: 2px solid rgb(173, 173, 173);
-    border-top: 2px solid rgb(100, 100, 100);
-}
-
-
 /* --------------------- Galeria das galaxias ----------------------------*/
 
 .terceira-section {
@@ -276,6 +264,10 @@ article {
     border-left: 2px solid #ffffff70;
     background-color: #0000004c;
     backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 .quarta-section p {
@@ -295,20 +287,6 @@ article {
 
 }
 
-.quarta-section .bloco-1{
-    border-top: 2px solid rgb(101, 101, 101);
-    border-right: 2px solid rgb(173, 173, 173);
-}
-
-.quarta-section .bloco-2{
-    border-top: 2px solid rgb(101, 101, 101);
-    border-left: 2px solid rgb(173, 173, 173);
-    border-bottom: 2px solid rgb(101, 101, 101);
-}
-
-.quarta-section .bloco-3{
-    border-right: 2px solid rgb(173, 173, 173);
-}
 
 .quarta-section .bloco-3 h2 {
     margin-top: 0;
