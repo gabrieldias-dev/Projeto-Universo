@@ -293,7 +293,7 @@ article {
     margin-top: 0;
 }
 
-/* Planetas do sistema solar */
+/* -------------Planetas do sistema solar --------------------- */
 
 .quinta-section h2 {
     margin: 0;
@@ -306,5 +306,59 @@ article {
     backdrop-filter: blur(4px);
     padding: 1em 0 1em 0;
 
+}
+
+.quinta-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-principal {
+    border: 2px solid black;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 3rem 0;
+}
+
+#carousel-container {
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid black;
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 400px;
+    flex-shrink: 0;
+}
+
+.carousel-item img {
+    width: 300px;
+    height: auto;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.carousel-controls button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
