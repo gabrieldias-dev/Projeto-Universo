@@ -9,8 +9,7 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
-    font-family: 'Stick No Bills', sans-serif;
-    
+    font-family: 'Stick No Bills', sans-serif; 
 }
 
 /* Animação do background do body */
@@ -19,9 +18,7 @@
     from {
         background-position: left;
         background-size: 2000px; 
-
     }
-
     to {
         background-position: right;
         background-size: 2000px; 
@@ -31,14 +28,8 @@
 
 /* Animação da galaxia e sistema solar girando */
  @keyframes rotation {
-    from {
-        transform: rotate(0deg),;
-        
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 } 
 
 ::-webkit-scrollbar {
@@ -53,8 +44,7 @@ body {
     width: 100vw;
     height: 100vh;
     animation: fundo 120s linear infinite;
-    animation-direction: alternate;  
-    
+    animation-direction: alternate;     
 }
 
 .filtro {
@@ -64,18 +54,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.107);  
-    
-
 }
 
 #filtro-section2 {
     background-color: rgba(0, 0, 0, 0.121);  
-
 }
 
 section {
-    width: 100%;
-    
+    width: 100%;   
 }
 
 .primeira-section {
@@ -83,8 +69,6 @@ section {
     flex-direction: column;
     align-items: center;
     color: rgba(255, 255, 255, 0.896);
-    
-
 }
 
 .primeira-section h1 {
@@ -92,8 +76,7 @@ section {
     text-transform: uppercase;
     font-size: 14em;
     font-family: 'Stick No Bills', sans-serif;
-    font-weight: 200;
-    
+    font-weight: 200; 
 }
 
 .primeira-section p {
@@ -105,7 +88,6 @@ section {
     background-color: rgba(0, 0, 0, 0.493);
     text-align: center;
     text-transform: uppercase;
-    
 }
 
 h2 {
@@ -115,11 +97,10 @@ h2 {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     letter-spacing: 2px;
-
 }
 
 
-
+/* ------------------- Galáxia girando --------------------- */
 
 .segunda-section {
     margin-top: 2em;
@@ -269,8 +250,8 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
 .quarta-section p {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0.5em 2em 0 2em;
@@ -282,10 +263,10 @@ article {
 .sistema-solares {
     max-width: 700px;
 }
+
 .quarta-section img {
     width: 100%;
     animation: rotation 70s linear infinite;
-
 }
 
 
@@ -305,6 +286,14 @@ article {
     background-color: rgba(23, 23, 23, 0.662);
     backdrop-filter: blur(4px);
     padding: 1em 0 1em 0;
+}
+
+.quinta-section p {
+    font-family: Arial, Helvetica, sans-serif;
+        padding: 0.5em 1em 0 1em;
+        text-align: left;
+        font-size: 1em;
+        letter-spacing: 1px;
 
 }
 
@@ -316,49 +305,69 @@ article {
 }
 
 .container-principal {
-    border: 2px solid black;
-    width: 600px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 3rem 0 3rem 0;
+    /* background-color: #ffffff0b;
+    backdrop-filter: blur(4px); */
 }
 
 #carousel-container {
+    position: relative;
     width: 400px;
     height: 600px;
     overflow: hidden;
-    position: relative;
-    border: 2px solid black;
+    
 }
 
 #carousel {
     display: flex;
+    
     transition: transform 0.3s ease-in-out;
 }
 
+#carousel p {
+    text-align: center;
+}
+
 .carousel-item {
-    min-width: 400px;
-    flex-shrink: 0;
+    position: relative;
+    min-width: 600px; 
+    height: 100vh; 
+    /* background-color: #ffffff0b;
+    backdrop-filter: blur(4px); */
+    border-radius: 5px;
 }
 
 .carousel-item img {
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 
+/* #mercurio, #venus, #terra, #marte, #saturno, #jupiter, #urano, #netuno {
+     position: absolute; 
+} */
+
+
 .carousel-controls {
     display: flex;
-    justify-content: space-between;
     margin-top: 10px;
+    gap: 43em;
+    position: absolute;
+    
+    
 }
 
 .carousel-controls button {
-    background-color: #333;
-    color: #fff;
+    background-color: #33333300;
+    font-size: 9em;
+    font-weight: 200;
+    color: #ffffffe9;
     border: none;
-    padding: 5px 10px;
+    padding: 15px 10px;
     cursor: pointer;
 }
 
