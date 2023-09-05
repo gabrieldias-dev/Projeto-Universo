@@ -17,6 +17,6 @@ nextButton.addEventListener("click", () => {
 });
 
 function updateCarousel() {
-    const translateX = currentIndex * -400;
+    const translateX = currentIndex * -600;
     carousel.style.transform = `translateX(${translateX}px)`;
 }
