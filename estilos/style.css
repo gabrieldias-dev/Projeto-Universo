@@ -13,7 +13,7 @@
 }
 
 /* Animação do background do body */
-@keyframes fundo {
+/* @keyframes fundo {
 
     from {
         background-position: left;
@@ -23,7 +23,7 @@
         background-position: right;
         background-size: 2000px; 
     }
-}
+} */
 
 
 /* Animação da galaxia e sistema solar girando */
@@ -334,18 +334,24 @@ article {
 }
 
 .carousel-item {
-    position: relative;
     min-width: 600px; 
     height: 100vh; 
-    /* background-color: #ffffff0b;
-    backdrop-filter: blur(4px); */
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-item > p {
+    width: 400px;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Stick No Bills', sans-serif;
 }
 
 .carousel-item img {
     width: 400px;
     height: auto;
 }
+
 
 /* #mercurio, #venus, #terra, #marte, #saturno, #jupiter, #urano, #netuno {
      position: absolute; 
