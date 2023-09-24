@@ -37,17 +37,16 @@
 }
 
 body { 
-    background-image: url(../imagens/b3.jpg); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: black;
     width: 100vw;
-    height: 100vh;
-    animation: fundo 120s linear infinite;
-    animation-direction: alternate;     
+    height: 100vh;  
 }
 
 .filtro {
+    background-image: url(../imagens/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -56,12 +55,9 @@ body {
     background-color: rgba(0, 0, 0, 0.107);  
 }
 
-#filtro-section2 {
-    background-color: rgba(0, 0, 0, 0.121);  
-}
-
 section {
-    width: 100%;   
+    width: 100%;
+    
 }
 
 .primeira-section {
@@ -103,7 +99,8 @@ h2 {
 /* ------------------- Galáxia girando --------------------- */
 
 .segunda-section {
-    margin-top: 2em;
+    background-image: url();
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
@@ -136,7 +133,7 @@ article {
 
 .galaxia-rotation {
     overflow: hidden;
-    z-index: -1;
+    z-index: 1;
    
 
 }
@@ -151,6 +148,8 @@ article {
 /* --------------------- Galeria das galaxias ----------------------------*/
 
 .terceira-section {
+    background-image: url(../imagens/bg-2.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +231,8 @@ article {
 /* -------------------- Sistema solar ------------------------------- */
 
 .quarta-section {
-    margin-top: 3em;
+    background-image: url(../imagens/bg3.jpg);
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -248,7 +248,6 @@ article {
     backdrop-filter: blur(4px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
