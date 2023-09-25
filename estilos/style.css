@@ -147,9 +147,16 @@ article {
 
 /* --------------------- Galeria das galaxias ----------------------------*/
 
-.terceira-section {
-    background-image: url(../imagens/bg-2.jpg);
+
+.backgroud3e4 {
+    background-image: url(../imagens/bg3.jpg);
     background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.terceira-section {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,8 +238,8 @@ article {
 /* -------------------- Sistema solar ------------------------------- */
 
 .quarta-section {
-    background-image: url(../imagens/bg3.jpg);
-    background-size: cover;
+    /* background-image: url(../imagens/bg3.jpg);
+    background-size: cover; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -299,7 +306,7 @@ article {
     border: 1px solid white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 2rem;
 }
 
