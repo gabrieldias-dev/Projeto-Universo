@@ -314,7 +314,6 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid blue;
     width: 30%;
     height: 35rem;
     background-image:linear-gradient(to bottom, black 20%, blue);
@@ -340,4 +339,38 @@ article {
     background-image: url(../imagens/planetas/terra-super.jpg);
     background-position: bottom ;
     background-repeat: no-repeat;
+}
+
+.marte {
+    background-image: url(../imagens/planetas/marte-super.jpg);
+    background-position: top -3em left 0;
+}
+
+.img-saturno {
+    width: 500px;
+}
+
+.saturno {
+    background-image: url(../imagens/planetas/saturno-super.webp);
+    background-size: cover;
+
+}
+
+.jupiter {
+    background-image: url(../imagens/planetas/jupiter-super.jpeg);
+    background-size: cover;
+}
+
+.img-urano {
+    width: 500px;
+}
+
+.urano {
+    background-image: url(../imagens/planetas/urano-super.jpg);
+    background-position: top;
+}
+
+.netuno {
+    background-image: url(../imagens/planetas/netuno-super.jpeg);
+    background-size: cover;
 }
