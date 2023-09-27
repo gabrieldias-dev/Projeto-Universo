@@ -342,5 +342,12 @@ article {
 }
 
 .img-urano {
-    width: 300px;   
+    width: 300px; 
+    margin-top: -2.2rem; 
+}
+
+.container-planetas > p {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
